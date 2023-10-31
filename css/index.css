@@ -1,0 +1,218 @@
+:root{
+    --blanco: #ffffff;
+    --main-color: #D4C19C;
+    --rojo: #FF0000
+}
+
+body {
+
+    font-family: Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+.img_lista{
+    list-style-image: url('img/paloma.png');
+    font-size: 15px;
+    height: 600px;
+}
+.pie{
+    margin-left: 5px;
+    font-size: 11px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.img_linea{
+    background-image: url("img/american-express-svgrepo-com.svg");
+    /*
+    background-image: url("img/mastercard-svgrepo-com.svg");
+    background-image: url("img/paypal-svgrepo-com.svg");*/
+    width: 40;
+    height: 20;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+footer{
+    bottom: 50px;
+    position: absolute;
+}
+.contiene_lista{
+    height: 1000px;
+    border: solid 1px #2e77d0;
+}
+/* FIN CARD */
+
+.link {
+    color: var(--main-color);
+    text-decoration: none;
+
+}
+.link:hover {
+     color: var(--main-color);
+}
+.link_footer {
+        color: #000;
+        text-decoration: none;
+}
+.link_footer:hover {
+    color: #000;
+}
+.div_footer{
+ display: grid;
+/* height: 200px;
+ width: 200px; */
+ grid-gap: 10px;
+ grid-template-columns: 25% 25% 25% 25%;
+ margin: 0 5% 0 5%;
+ padding: 20px 0px 20px 0px;
+ 
+}
+
+.alinear{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.div_aliados{
+margin: 10px;
+padding: 5px;
+}
+.div_destacadas{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20px;
+    margin: 0% 5% 0% 5%;
+    padding: 30px 10px;
+}
+.container{
+     /* Arriba | Derecha | Abajo | Izquierda */
+     margin: 0% 3% 0 3%;
+}
+.conf_carrucel{
+    min-width: 300;
+    min-height: 200;
+}
+.bg_nav{
+    background-color: var(--main-color);
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+.menu_nav{
+    display: block;
+    margin-top: 15px;
+}
+.link_menu {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.link_menu:hover {
+color: var(--rojo);
+font-weight: bold;
+}
+.formato_logo{
+    max-height: 55px;
+    max-width: 90px;
+}
+.jumbotron{
+    min-height: 600px;
+    min-width: 600px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/fondo_inicio.jpg");
+}
+.busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton_gold{
+    background-color: var(--main-color);
+    border: var(--main-color);
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 55px;
+    border-radius: 0px 20px 20px 0px;
+    margin-top: 300px;
+  /*  margin-left: 15px;
+  text-transform: uppercase;*/
+}
+.caja_naranja{
+    border: var(--blanco);
+    display: inline-block;
+    text-align: center;
+    padding: 15px 55px;
+    margin-top: 300px;
+    width: 600px;
+}
+.d-grid{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: auto auto auto;
+    background-color: azure;
+    padding: 5px;
+}
+.fondo{
+    min-height: 350px;
+    min-width: 600px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/pie_pagina.png");
+}
+
+@media only screen and (min-width: 400px) {
+   .div_footer{
+       grid-template-columns: auto;
+   }
+}
+@media only screen and (min-width: 600px) {
+    .div_footer{
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .div_footer{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+@media only screen and (min-width: 760px) {
+    .bg_nav{
+        flex-direction: row;
+    }
+ }
+
+ @media only screen and (min-width: 400px) {
+    .bg_nav{
+        grid-template-columns: auto;
+       
+    }
+ }
+ @media only screen and (min-width: 600px) {
+     .bg_nav{
+         grid-template-columns: auto auto;
+       
+
+     }
+ }
+ @media only screen and (min-width: 900px) {
+     .bg_nav{
+         grid-template-columns: auto auto auto auto;
+        
+
+     }
+ }
+ @media only screen and (min-width: 760px) {
+     .bg_nav{
+         flex-direction: row;
+      
+
+     }
+  }
